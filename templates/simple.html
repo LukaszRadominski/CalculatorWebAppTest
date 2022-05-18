@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<form action="{{url_for('calculate')}}", method="post">    
+  <div>
+    <label>Ammount</label>
+    <input type="number" name="firstNubmer" placeholder="Insert First Nmber" required/>
+  </div> 
+  <div>
+    <select id="selectOperation" name="operation" required>
+        <option value="">Select....</option>
+        <option value="plus">+</option>
+        <option value="minus">-</option>
+        <option value="multipy">*</option>
+        <option value="divide">/</option>
+    </select>
+  </div>
+  <div>
+    <label>Ammount</label>
+    <input type="number" name="secondNumber" placeholder="Insert Second Number" required/>
+  </div> 
+  <div>    
+      <input type="submit" value="calculate"/>
+  </div>
+  
+  <div>
+    <label>Result</label>
+    <input type="text" placeholder="Result" value={{result}}>
+  </div>
+
+        
+</form>
+
+</body>
+</html>
